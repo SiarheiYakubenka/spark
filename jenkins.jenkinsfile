@@ -15,14 +15,14 @@ pipeline {
         stage('Compile') {
             steps {
                 echo "Compiling..."
-                sh "sbt compile"
+                bat "sbt compile"
             }
         }
 
         stage('Test') {
             steps {
                 echo "Testing..."
-                sh "sbt test"
+                bat "sbt test"
             }
         }
 
